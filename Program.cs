@@ -32,8 +32,8 @@ namespace PaymentDetails
 
             app.UseCors(option =>
             {
-                option.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader();
-            });
+                option.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader(); 
+            }); // this code to fix the cors origin error that will show with you
             //app.UseHttpsRedirection();
             app.UseAuthorization();
             app.MapControllers();
